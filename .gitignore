@@ -1,16 +1,137 @@
-# Node rules:
-## Grunt intermediate storage (http://gruntjs.com/creating-plugins#storing-task-files)
-.grunt
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
 
-## Dependency directory
-## Commenting this out is preferred by some people, see
-## https://docs.npmjs.com/misc/faq#should-i-check-my-node_modules-folder-into-git
-node_modules
+# C extensions
+*.so
 
-# Book build output
-_book
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+*.egg-info/
+.installed.cfg
+*.egg
 
-# eBook build output
-*.epub
-*.mobi
-*.pdf
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+.pytest_cache/
+.pyre/
+
+# Translations
+*.mo
+*.pot
+
+# Virtual Environments
+venv/
+ENV/
+env/
+venv.bak/
+env.bak/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints
+
+# PyCharm/VSCode
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+
+# Tkinter window configurations
+*.tk
+
+# Logs
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# 🤟 Sign Language to Text Conversion Model
+
+A real-time American Sign Language (ASL) recognition system built using deep learning and computer vision. The model converts ASL gestures captured via webcam into readable English text with high accuracy and efficiency.
+
+## 📅 Duration
+**Dec 2024 – April 2025**
+
+## 🚀 Features
+- Real-time ASL recognition using webcam input
+- 98% accuracy achieved using a custom CNN architecture
+- Supports 26 alphabets (A-Z) from the ASL dictionary
+- Lightweight and runs without specialized hardware
+- User-friendly GUI interface built with Tkinter
+
+## 🛠️ Tech Stack
+- Python
+- OpenCV
+- NumPy
+- TensorFlow & Keras
+- Hunspell (Spell correction)
+- Tkinter
+- Visual Studio Code
+
+## 🧠 Model Overview
+- Multi-layer Convolutional Neural Network (CNN)
+- Trained on a custom dataset with 26,000+ gesture images
+- Data augmentation techniques applied for robustness
+- Spell correction for better contextual understanding using Hunspell
+
+## 📂 Dataset
+- Custom-built using OpenCV
+- Over 26,000 labeled images (A–Z gestures)
+- Preprocessing steps include resizing, grayscale conversion, and augmentation
+
+## 🖥️ How to Run
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/yourusername/sign-language-to-text.git
+   cd sign-language-to-text
+
+python -m venv venv
+source venv/bin/activate  # For Linux/macOS
+venv\Scripts\activate     # For Windows
+
+pip install -r requirements.txt
+
+python app.py - To run the python file
+
+📈 Results
+Training Accuracy: 98.0%
+
+Validation Accuracy: 96.7%
+
+Achieved a 30% precision improvement over traditional models using custom image preprocessing and augmentation.
+
+📜 License
+This project is licensed under the MIT License. See LICENSE for more details.
+
+🙌 Acknowledgements
+TensorFlow & Keras documentation
+
+OpenCV tutorials
+
+American Sign Language dataset inspiration
